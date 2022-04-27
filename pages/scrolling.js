@@ -3,9 +3,9 @@ import ScrollAction from "../components/scrollAction";
 const Scrolling = () => {
     return (
         <div className="">
-            <div className="h-[1000px] bg-gray-500"></div>
+            <div className="h-48 bg-black"></div>
             <ScrollAction />
-            <ScrollAction />
+            <div className="h-48 bg-black"></div>
         </div>
     );
 }
