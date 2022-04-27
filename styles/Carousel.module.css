@@ -1,0 +1,50 @@
+.emblaViewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.emblaViewport.is-draggable {
+    cursor: move;
+    cursor: grab;
+}
+
+.emblaViewport.is-dragging {
+    cursor: grabbing;
+}
+
+.emblaSlide {
+    position: relative;
+    min-width: 100%;
+    padding-left: 10px;
+}
+
+.emblaButton {
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+    touch-action: manipulation;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    fill: #1bcacd;
+    padding: 0;
+  }
+  
+  .emblaButton:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+  
+  .emblaButtonPrev {
+    left: 27px;
+  }
+  
+  .emblaButtonNext {
+    right: 27px;
+  }
