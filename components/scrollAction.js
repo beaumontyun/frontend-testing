@@ -5,7 +5,7 @@ import { ScrollContext } from './scrollObserver'
 const opacityForBlock = (sectionProgress, blockNo) => {
     const progress = sectionProgress - blockNo
     if (progress >= 0 && progress < 1) return 1
-    return 0.2
+    return 0.1
 }
 
 const ScrollAction = () => {
@@ -18,9 +18,14 @@ const ScrollAction = () => {
     const { current: elContainer } = refContainer
     if (elContainer) {
         const { clientHeight, offsetTop } = elContainer
+        // get viewport height in pixels
         const screenH = window.innerHeight
+        // half screen height: for where to set the opacity
         const halfH = screenH / 2
+        
+        // 1. lowest value of (height + half screen, maximum value(negative viewport screen, scroll position minus HTMLElement.offsetTop) plus half the screen) divided by height
         const percentY = Math.min(clientHeight + halfH, Math.max(-screenH, scrollY - offsetTop) + halfH) / clientHeight
+        
         progress = Math.min(numOfPages - 0.5, Math.max(0.5, percentY * numOfPages))
     }
 
