@@ -1,4 +1,6 @@
-const GetRequest = ({ meta }) => {
+const meta = { "name": "HANDSOFF Membership Pass #001", "description": "Member: 001 \n\nTag assignment: Escaping Stargazer \n\nHolder of this HANDSOFF Membership Pass is granted access to perks and benefits of the HANDSOFF Community as specified in the terms and condition, see https://handsoff.studio/membershiptc", "tag": "Escaping Stargazer", "id": "001", "external_url": "https://www.handsoff.studio/", "image": "ipfs://IPFS/1.png", "attributes": [{ "trait_type": "Adjective", "value": "Escaping" }, { "trait_type": "Name", "value": "Stargazer" }] }
+
+const GetRequest = () => {
     return (
         <div className="text-white m-10 flex flex-row gap-4">
             <div className="grid grid-rows-8 gap-9">
@@ -37,17 +39,6 @@ const GetRequest = ({ meta }) => {
             </div>
         </div>
     );
-}
-
-export async function getStaticProps() {
-    const res = await fetch('http://localhost:3000/api/hello')
-    const meta = await res.json()
-
-    return {
-        props: {
-            meta
-        }
-    }
 }
 
 export default GetRequest;

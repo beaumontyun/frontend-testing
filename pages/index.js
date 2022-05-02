@@ -6,6 +6,7 @@ export default function Home() {
       <h1>Links to test pages -</h1>
       <Link href="/scrolling"><a>- Scrolling</a></Link>
       <Link href="/carousel"><a>- Carousel</a></Link>
+      <Link href="/getrequest"><a>- Metadata</a></Link>
     </div>
   )
 }
