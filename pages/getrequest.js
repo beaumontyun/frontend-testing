@@ -36,6 +36,14 @@ const GetRequest = () => {
                     <p>{meta.attributes[1].trait_type}:</p>
                     <pre>{meta.attributes[1].value}</pre>
                 </div>
+                <div className="grid grid-cols-10">
+                    <p>{meta.attributes[2].trait_type}:</p>
+                    <pre>{meta.attributes[2].value}</pre>
+                </div>
+                <div className="grid grid-cols-10">
+                    <p>{meta.attributes[3].trait_type}:</p>
+                    <pre>{meta.attributes[3].value}</pre>
+                </div>
             </div>
         </div>
     );
