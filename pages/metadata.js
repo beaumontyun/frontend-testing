@@ -1,6 +1,6 @@
 const meta = {"name":"HANDSOFF Membership Pass #001","description":"Serial: 001 \n\nAssignment: Smokey Sun \n\nHolder of this HANDSOFF Membership Pass is granted access to membership perks and benefits of the HANDSOFF community as specified in the terms and conditions, see: https://handsoff.studio/membershiptc","tag":"Smokey Sun","id":"001","external_url":"https://www.handsoff.studio/","image":"ipfs://QmdsYzKLTDEGQWxDGhUnzHysRgVGvMzNDN2tzjPAG5V9Mi/1.jpg","attributes":[{"trait_type":"Background","value":"Marble"},{"trait_type":"Platform","value":"Silver"},{"trait_type":"Adjective","value":"Smokey"},{"trait_type":"Name","value":"Sun"}]}
 
-const GetRequest = () => {
+const Metadata = () => {
     return (
         <div className="text-white m-10 flex flex-row gap-4">
             <div className="grid grid-rows-8 gap-9">
@@ -49,4 +49,4 @@ const GetRequest = () => {
     );
 }
 
-export default GetRequest;
+export default Metadata;
