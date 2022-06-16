@@ -2,11 +2,14 @@ import { useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { softShadows, MeshWobbleMaterial, OrbitControls, Box } from '@react-three/drei'
 import { useSpring, a } from '@react-spring/three'
+import { motion } from "framer-motion";
 
 softShadows();
 
 const Threefiber = () => {
     return (
+        <motion.div initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
         <div className="bg-white fixed w-[100vw] h-[100vh] m-0 p-0 box-border flex flex-row gap-3">
             <div className='text-center w-[40%] self-center'>
                 <p className='w-[80%] mx-auto font-bold text-xl uppercase'>This is a box <br /> an ultra awesome box <br />Try moving it </p>
@@ -29,6 +32,7 @@ const Threefiber = () => {
                 <OrbitControls />
             </Canvas>
         </div>
+        </motion.div>
     );
 }
 

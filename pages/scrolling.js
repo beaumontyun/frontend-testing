@@ -1,8 +1,10 @@
 import ScrollAction from "../components/scrollAction";
+import { motion } from "framer-motion";
 
 const Scrolling = () => {
     return (
-        <div className="">
+        <motion.div initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <div className="h-48 bg-black"></div>
             <ScrollAction />
             <div className="h-60 bg-black"></div>
@@ -12,7 +14,7 @@ const Scrolling = () => {
                 </video>
             </div>
             <div className="h-48 bg-black"></div>
-        </div>
+        </motion.div>
     );
 }
 
