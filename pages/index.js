@@ -79,6 +79,13 @@ export default function Home() {
           >
             <Link href="/threefiber">- React Three Fiber</Link>
           </motion.div>
+          <motion.div
+            variants={fadeInUp}
+            whileHover={{ scale: 1.01 }}
+            whileTap={{ scale: 0.99 }}
+          >
+            <Link href="/zustand">- Zustand state management</Link>
+          </motion.div>
         </motion.div>
       </div>
     </motion.div>
