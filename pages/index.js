@@ -86,6 +86,20 @@ export default function Home() {
           >
             <Link href="/zustand">- Zustand state management</Link>
           </motion.div>
+          <motion.div
+            variants={fadeInUp}
+            whileHover={{ scale: 1.01 }}
+            whileTap={{ scale: 0.99 }}
+          >
+            <Link href="/3js-data-injection">- 3JS Data Injection</Link>
+          </motion.div>
+          <motion.div
+            variants={fadeInUp}
+            whileHover={{ scale: 1.01 }}
+            whileTap={{ scale: 0.99 }}
+          >
+            <a href="https://dune-demo.vercel.app/demo1">- 3D world testing</a>
+          </motion.div>
         </motion.div>
       </div>
     </motion.div>
