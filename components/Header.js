@@ -23,8 +23,8 @@ const Header = () => {
     }, [count]);
 
     return (
-        <div className="w-full bg-black py-4">
-            <div className="flex justify-between mx-auto gap-20 px-10 text-white text-xl">
+        <div className="w-full bg-black py-4 font-bold">
+            <div className="flex justify-between mx-auto gap-20 px-10 text-white sm:text-xl">
                 <Link href='/'>Home</Link>
                 <div>
                     <Link href='/zustand'>

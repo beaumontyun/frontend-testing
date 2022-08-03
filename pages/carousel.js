@@ -18,7 +18,7 @@ const Carousel = () => {
   return (
     <motion.div initial={{ opacity: 0 }}
       animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-      <div className="relative bg-white p-[20px] w-fit h-fit mx-auto overflow-hidden border-2 border-red-300">
+      <div className="relative bg-black text-white p-[20px] w-fit h-fit mx-auto overflow-hidden">
         <div className={style.emblaViewport} ref={emblaRef}>
           <div className="flex select-none -ml-[10px] w-96">
             <div className={style.emblaSlide}>
@@ -29,12 +29,14 @@ const Carousel = () => {
             </div>
           </div>
         </div>
-        <button className="embla__prev" onClick={scrollPrev}>
+        <div className="grid grid-cols-2">
+        <button className="embla__prev font-bold" onClick={scrollPrev}>
           Prev
         </button>
-        <button className="embla__next" onClick={scrollNext}>
+        <button className="embla__next font-bold" onClick={scrollNext}>
           Next
         </button>
+        </div>
       </div>
     </motion.div>
   );
